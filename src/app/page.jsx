@@ -121,7 +121,7 @@ export default function HomePage() {
               <p style={{
                 fontSize: "13px",
                 color: "#9B7B54",
-                lineHeight: "1.6",
+                lineHeight: "1.7",
               }}>
                 {f.desc}
               </p>
