@@ -29,7 +29,7 @@ export default function RegisterPage() {
   return (
     <div style={{
       minHeight: "100vh",
-      background: "var(--earth-50)",
+      background: "#FDF8F3",
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
@@ -37,17 +37,17 @@ export default function RegisterPage() {
     }}>
       <div style={{
         background: "white",
-        border: "1px solid var(--border)",
+        border: "1px solid #E0C9A6",
         borderRadius: "16px",
         padding: "2rem",
         width: "100%",
         maxWidth: "420px",
       }}>
         <div style={{ marginBottom: "1.5rem" }}>
-          <h1 style={{ fontSize: "22px", fontWeight: "600", color: "var(--text-dark)" }}>
+          <h1 style={{ fontSize: "22px", fontWeight: "600", color: "#2C1A0E" }}>
             Create an account
           </h1>
-          <p style={{ fontSize: "14px", color: "var(--text-light)", marginTop: "4px" }}>
+          <p style={{ fontSize: "14px", color: "#9B7B54", marginTop: "4px" }}>
             Join LocalCraft and support local artisans
           </p>
         </div>
@@ -131,8 +131,8 @@ export default function RegisterPage() {
             type="submit"
             disabled={loading}
             style={{
-              background: loading ? "var(--earth-200)" : "var(--earth-600)",
-              color: loading ? "var(--text-light)" : "white",
+              background: loading ? "#E8D5B5" : "#8B6435",
+              color: loading ? "#9B7B54" : "white",
               border: "none",
               borderRadius: "8px",
               padding: "11px",

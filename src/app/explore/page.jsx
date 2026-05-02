@@ -10,13 +10,13 @@ const ShopsMap = dynamic(() => import("@/components/maps/ShopsMap"), {
     <div style={{
       width: "100%",
       height: "500px",
-      background: "var(--earth-100)",
+      background: "#F5ECD9",
       borderRadius: "14px",
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
     }}>
-      <p style={{ color: "var(--text-light)", fontSize: "14px" }}>Loading map...</p>
+      <p style={{ color: "#9B7B54", fontSize: "14px" }}>Loading map...</p>
     </div>
   ),
 });
@@ -94,7 +94,7 @@ export default function ExplorePage() {
       {selectedShop && (
         <div style={{
           background: "white",
-          border: "1.5px solid var(--earth-400)",
+          border: "1.5px solid #C4975A",
           borderRadius: "14px",
           padding: "1rem 1.25rem",
           display: "flex",
@@ -114,15 +114,15 @@ export default function ExplorePage() {
             ) : (
               <div style={{
                 width: "52px", height: "52px", borderRadius: "50%",
-                background: "var(--earth-100)", display: "flex",
+                background: "#F5ECD9", display: "flex",
                 alignItems: "center", justifyContent: "center", fontSize: "22px",
               }}>🧵</div>
             )}
             <div>
-              <p style={{ fontSize: "15px", fontWeight: "600", color: "var(--text-dark)" }}>
+              <p style={{ fontSize: "15px", fontWeight: "600", color: "#2C1A0E" }}>
                 {selectedShop.name}
               </p>
-              <p style={{ fontSize: "13px", color: "var(--text-light)", marginTop: "2px" }}>
+              <p style={{ fontSize: "13px", color: "#9B7B54", marginTop: "2px" }}>
                 📍 {selectedShop.location.address}
               </p>
             </div>
@@ -130,7 +130,7 @@ export default function ExplorePage() {
           <Link
             href={`/shop/${selectedShop._id}`}
             style={{
-              background: "var(--earth-600)",
+              background: "#8B6435",
               color: "white",
               padding: "9px 20px",
               borderRadius: "8px",
@@ -148,7 +148,7 @@ export default function ExplorePage() {
       <h2 style={{
         fontSize: "16px",
         fontWeight: "600",
-        color: "var(--text-dark)",
+        color: "#2C1A0E",
         marginBottom: "1rem",
       }}>
         {loading ? "Finding shops near you..." : `${shops.length} shop${shops.length !== 1 ? "s" : ""} found nearby`}
@@ -159,15 +159,15 @@ export default function ExplorePage() {
         <div style={{
           textAlign: "center",
           padding: "4rem 1rem",
-          color: "var(--text-light)",
+          color: "#9B7B54",
         }}>
           <p style={{ fontSize: "40px", marginBottom: "12px" }}>🔍</p>
-          <p style={{ fontSize: "15px", marginBottom: "8px", color: "var(--text-mid)" }}>
+          <p style={{ fontSize: "15px", marginBottom: "8px", color: "#6B4C2A" }}>
             No shops found in your area yet.
           </p>
           <Link
             href="/register"
-            style={{ fontSize: "13px", color: "var(--earth-600)", textDecoration: "none" }}
+            style={{ fontSize: "13px", color: "#8B6435", textDecoration: "none" }}
           >
             Be the first seller in your area →
           </Link>
@@ -181,12 +181,12 @@ export default function ExplorePage() {
         gap: "1.25rem",
       }}>
         {shops.map((shop) => (
-          <Link
+              <Link
             key={shop._id}
             href={`/shop/${shop._id}`}
             style={{
               background: "white",
-              border: "1px solid var(--border)",
+                  border: "1px solid #E0C9A6",
               borderRadius: "14px",
               overflow: "hidden",
               textDecoration: "none",
@@ -203,7 +203,7 @@ export default function ExplorePage() {
               <div style={{
                 width: "100%",
                 height: "160px",
-                background: "var(--earth-100)",
+                background: "#F5ECD9",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -216,14 +216,14 @@ export default function ExplorePage() {
               <h3 style={{
                 fontSize: "15px",
                 fontWeight: "600",
-                color: "var(--text-dark)",
+                color: "#2C1A0E",
                 marginBottom: "4px",
               }}>
                 {shop.name}
               </h3>
               <p style={{
                 fontSize: "13px",
-                color: "var(--text-light)",
+                color: "#9B7B54",
                 lineHeight: "1.5",
                 marginBottom: "10px",
                 display: "-webkit-box",
@@ -233,27 +233,27 @@ export default function ExplorePage() {
               }}>
                 {shop.description}
               </p>
-              <p style={{ fontSize: "12px", color: "var(--text-light)" }}>
+              <p style={{ fontSize: "12px", color: "#9B7B54" }}>
                 📍 {shop.location.address}
               </p>
               <div style={{
                 marginTop: "10px",
                 paddingTop: "10px",
-                borderTop: "1px solid var(--border)",
+                borderTop: "1px solid #E0C9A6",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "space-between",
               }}>
                 <span style={{
                   fontSize: "11px",
-                  background: "var(--earth-100)",
-                  color: "var(--earth-600)",
+                  background: "#F5ECD9",
+                  color: "#8B6435",
                   padding: "3px 10px",
                   borderRadius: "999px",
                 }}>
                   🚚 {shop.deliveryRadius}km radius
                 </span>
-                <span style={{ fontSize: "12px", color: "var(--earth-600)", fontWeight: "500" }}>
+                <span style={{ fontSize: "12px", color: "#8B6435", fontWeight: "500" }}>
                   View →
                 </span>
               </div>

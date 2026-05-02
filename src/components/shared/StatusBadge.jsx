@@ -1,7 +1,7 @@
 export default function StatusBadge({ status }) {
   const styles = {
     pending:   { bg: "#FEF3C7", color: "#92400E" },
-    confirmed: { bg: "var(--earth-100)", color: "var(--earth-800)" },
+    confirmed: { bg: "#F5ECD9", color: "#5C3D18" },
     shipped:   { bg: "#EDE9FE", color: "#5B21B6" },
     delivered: { bg: "#D1FAE5", color: "#065F46" },
     cancelled: { bg: "#FEE2E2", color: "#991B1B" },

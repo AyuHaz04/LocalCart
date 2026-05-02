@@ -36,7 +36,7 @@ export default function LoginPage() {
   return (
     <div style={{
       minHeight: "100vh",
-      background: "var(--earth-50)",
+      background: "#FDF8F3",
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
@@ -44,17 +44,17 @@ export default function LoginPage() {
     }}>
       <div style={{
         background: "white",
-        border: "1px solid var(--border)",
+        border: "1px solid #E0C9A6",
         borderRadius: "16px",
         padding: "2rem",
         width: "100%",
         maxWidth: "420px",
       }}>
         <div style={{ marginBottom: "1.5rem" }}>
-          <h1 style={{ fontSize: "22px", fontWeight: "600", color: "var(--text-dark)" }}>
+          <h1 style={{ fontSize: "22px", fontWeight: "600", color: "#2C1A0E" }}>
             Welcome back
           </h1>
-          <p style={{ fontSize: "14px", color: "var(--text-light)", marginTop: "4px" }}>
+          <p style={{ fontSize: "14px", color: "#9B7B54", marginTop: "4px" }}>
             Sign in to your LocalCraft account
           </p>
         </div>
@@ -122,8 +122,8 @@ export default function LoginPage() {
             type="submit"
             disabled={loading}
             style={{
-              background: loading ? "var(--earth-200)" : "var(--earth-600)",
-              color: loading ? "var(--text-light)" : "white",
+                  background: loading ? "#E8D5B5" : "#8B6435",
+                  color: loading ? "#9B7B54" : "white",
               border: "none",
               borderRadius: "8px",
               padding: "11px",
@@ -137,9 +137,9 @@ export default function LoginPage() {
           </button>
         </form>
 
-        <p style={{ fontSize: "13px", color: "var(--text-light)", textAlign: "center", marginTop: "1.25rem" }}>
+        <p style={{ fontSize: "13px", color: "#9B7B54", textAlign: "center", marginTop: "1.25rem" }}>
           Don't have an account?{" "}
-          <Link href="/register" style={{ color: "var(--earth-600)", textDecoration: "none", fontWeight: "500" }}>
+          <Link href="/register" style={{ color: "#8B6435", textDecoration: "none", fontWeight: "500" }}>
             Sign up
           </Link>
         </p>
