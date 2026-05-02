@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <nav style={{
       background: "white",
-      borderBottom: "1px solid var(--border)",
+      borderBottom: "1px solid #E0C9A6",
       padding: "0 1.5rem",
       height: "60px",
       display: "flex",
@@ -19,9 +19,8 @@ export default function Navbar() {
       <Link href="/" style={{
         fontSize: "20px",
         fontWeight: "600",
-        color: "var(--earth-600)",
+        color: "#8B6435",
         textDecoration: "none",
-        letterSpacing: "-0.3px",
       }}>
         🧵 LocalCraft
       </Link>
@@ -29,27 +28,27 @@ export default function Navbar() {
       <div style={{ display: "flex", alignItems: "center", gap: "24px" }}>
         <Link href="/explore" style={{
           fontSize: "14px",
-          color: "var(--text-mid)",
+          color: "#6B4C2A",
           textDecoration: "none",
         }}>
           Explore
         </Link>
 
         {status === "loading" && (
-          <span style={{ fontSize: "13px", color: "var(--text-light)" }}>...</span>
+          <span style={{ fontSize: "13px", color: "#9B7B54" }}>...</span>
         )}
 
         {status === "unauthenticated" && (
           <>
             <Link href="/login" style={{
               fontSize: "14px",
-              color: "var(--text-mid)",
+              color: "#6B4C2A",
               textDecoration: "none",
             }}>
               Log in
             </Link>
             <Link href="/register" style={{
-              background: "var(--earth-600)",
+              background: "#8B6435",
               color: "white",
               padding: "8px 16px",
               borderRadius: "8px",
@@ -67,7 +66,7 @@ export default function Navbar() {
             {session.user.role === "seller" && (
               <Link href="/seller" style={{
                 fontSize: "14px",
-                color: "var(--text-mid)",
+                color: "#6B4C2A",
                 textDecoration: "none",
               }}>
                 My Shop
@@ -76,7 +75,7 @@ export default function Navbar() {
             {session.user.role === "buyer" && (
               <Link href="/buyer" style={{
                 fontSize: "14px",
-                color: "var(--text-mid)",
+                color: "#6B4C2A",
                 textDecoration: "none",
               }}>
                 My Orders
@@ -85,7 +84,7 @@ export default function Navbar() {
             <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
               <span style={{
                 fontSize: "13px",
-                color: "var(--text-dark)",
+                color: "#2C1A0E",
                 fontWeight: "500",
               }}>
                 Hi, {session.user.name?.split(" ")[0]}
@@ -94,7 +93,7 @@ export default function Navbar() {
                 onClick={() => signOut({ callbackUrl: "/" })}
                 style={{
                   fontSize: "13px",
-                  color: "var(--text-light)",
+                  color: "#9B7B54",
                   background: "none",
                   border: "none",
                   cursor: "pointer",
